@@ -4,9 +4,9 @@ import csv
 
 
 # open CSV files
-with open('north_data/employees_data.csv', mode='r', newline='') as employee_file,\
-     open('north_data/customers_data.csv', mode='r', newline='') as customer_file, \
-     open('north_data/orders_data.csv', mode='r', newline='') as order_file:
+with open('north_data/employees_data.csv', mode='r', newline='', encoding='utf-8') as employee_file,\
+     open('north_data/customers_data.csv', mode='r', newline='', encoding='utf-8') as customer_file, \
+     open('north_data/orders_data.csv', mode='r', newline='', encoding='utf-8') as order_file:
 
     employee_data = csv.reader(employee_file)
     next(employee_data)  # skip header row
